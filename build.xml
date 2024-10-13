@@ -1,0 +1,11 @@
+<project name="HelloJenkins" default="run" basedir=".">
+    <target name="compile">
+        <mkdir dir="build/classes"/>
+        <javac srcdir="src" destdir="build/classes"/>
+    </target>
+
+    <target name="run" depends="compile">
+        <java classname="Main" classpath="build/classes" fork="true"/>
+    </target>
+</project>
+
