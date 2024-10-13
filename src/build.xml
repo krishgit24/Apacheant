@@ -1,6 +1,7 @@
-<project name="SimpleJavaApp" default="run">
-    <property name="src" location="."/> <!-- Update src path to current directory -->
-    <property name="build" location="../build"/> <!-- Move build folder one level up -->
+<project name="SimpleJavaApp" default="compile">
+    <property name="src" location="src"/>
+
+    <property name="build" location="build"/> 
 
     <target name="init">
         <mkdir dir="${build}"/>
